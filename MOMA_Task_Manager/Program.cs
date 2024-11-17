@@ -20,7 +20,7 @@ builder.Services.AddControllersWithViews();
 var app = builder.Build();
 
 //Docker
-app.Urls.Add("http://0.0.0.0:80");
+//app.Urls.Add("http://0.0.0.0:80");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

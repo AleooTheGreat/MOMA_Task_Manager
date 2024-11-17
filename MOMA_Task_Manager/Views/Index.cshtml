@@ -1,0 +1,28 @@
+﻿<!-- Views/Utilizatori/Index.cshtml -->
+@{
+    ViewBag.Title = "Utilizatori";
+}
+
+<h2>Utilizatori</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nume</th>
+            <th>Prenume</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var utilizator in ViewBag.Utilizatoris)
+        {
+            <tr>
+                <td>@utilizator.Nume</td>
+                <td>@utilizator.Prenume</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<form asp-action="CopyAspNetUsersToUtilizatoris" method="post">
+    <button type="submit">Copy AspNetUsers to Utilizatoris</button>
+</form>

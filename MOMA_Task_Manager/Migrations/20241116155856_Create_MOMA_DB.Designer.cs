@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MOMA_Task_Manager.Migrations
 {
     [DbContext(typeof(MOMA_Db_Context))]
-    [Migration("20241116152114_Create_MOMA_DB")]
+    [Migration("20241116155856_Create_MOMA_DB")]
     partial class Create_MOMA_DB
     {
         /// <inheritdoc />
